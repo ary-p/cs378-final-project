@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="menu">
-            <div className="row" key={menuItem.id}>
-                <div class="col-3 offset-2">
+            <div className="row" >
+                <div>
                     <img src="./images/map.png" class="img-fluid" alt="temporary map" />
                 </div>
             </div>
