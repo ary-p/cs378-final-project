@@ -3,14 +3,29 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="menu">
-            <img src="images/map.png" className="logo rounded"/>
-            <div className="section text-center">
-                <p className="tagline">City Lens</p>
+            <div className="row" key={menuItem.id}>
+                <div class="col-3 offset-2">
+                    <img src="./images/map.png" class="img-fluid" alt="temporary map" />
+                </div>
             </div>
-            <div className="section text-center">
-                <p className="normal-text">Most authentic in Austin!</p>
+            <div>
+                <div className="section text-center">
+                    <p className="tagline">City Lens</p>
+                </div>
+                <div className="section text-center">
+                    <p className="normal-text">Most authentic in Austin!</p>
+                </div>
             </div>
         </div>
+        // <div className="menu">
+        //     <img src="images/map.png" className="logo rounded" />
+        //     <div className="section text-center">
+        //         <p className="tagline">City Lens</p>
+        //     </div>
+        //     <div className="section text-center">
+        //         <p className="normal-text">Most authentic in Austin!</p>
+        //     </div>
+        // </div>
     );
 };
 
