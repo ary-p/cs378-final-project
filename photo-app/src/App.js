@@ -2,10 +2,9 @@ import './App.css';
 import Header from './components/Header';
 import MenuItem from './components/MenuItem';
 import React, {useState} from 'react';
-
-
-
+import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. 
+
 // You can use bootstrap or your own classes by using the className attribute in your elements.
 
 // Menu data. An array of objects where each object represents a menu item. 
@@ -109,6 +108,7 @@ function App() {
   return (
     <div>
         {/* Different components used for header and menuItems. */}
+        <Navbar />
         <Header />   
         <MenuItem menuItems={menuItems} />
     </div>
