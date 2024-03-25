@@ -12,76 +12,67 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css sty
 // You can use the image name to get the image from the images folder.
 const menuItems = [
   {
-    id: 1,
-    title: 'Zilker Bridge',
-    description: 'Japanese dumplings',
-    imageName: 'bridge1.jpg',
-    price: 5.99,
+    "id": 1,
+    "title": "Zilker Bridge",
+    "description": "Iconic bridge offering scenic views of Austin",
+    "imageName": "bridge1.jpg"
   },
   {
-    id: 2,
-    title: 'Ladybird Bridge',
-    description: 'Japanese rice rolls',
-    imageName: 'bridge2.jpg',
-    price: 6.99,
+    "id": 2,
+    "title": "Ladybird Bridge",
+    "description": "Bridge named after Lady Bird Lake, providing picturesque views",
+    "imageName": "bridge2.jpg"
   },
   {
-    id: 3,
-    title: 'Texas Capitol',
-    description: 'Japanese noodle soup',
-    imageName: 'capitol.jpg',
-    price: 7.99,
+    "id": 3,
+    "title": "Texas Capitol",
+    "description": "Historical landmark and seat of Texas government",
+    "imageName": "capitol.jpg"
   },
   {
-    id: 4,
-    title: 'Graffiti Wall',
-    description: 'Japanese green tea cake',
-    imageName: 'graffiti-wall.jpg',
-    price: 4.99,
+    "id": 4,
+    "title": "Graffiti Wall",
+    "description": "Colorful mural-covered wall showcasing local art",
+    "imageName": "graffiti-wall.jpg"
   },
   {
-    id: 5,
-    title: 'Austin Skyline',
-    description: 'Japanese rice cake',
-    imageName: 'skyline.jpg',
-    price: 3.99,
+    "id": 5,
+    "title": "Austin Skyline",
+    "description": "Panoramic view of downtown Austin's skyline",
+    "imageName": "skyline.jpg"
   },
   {
-    id: 6,
-    title: 'South Congress',
-    description: 'Japanese skewered chicken',
-    imageName: 'soco.jpeg',
-    price: 2.99,
+    "id": 6,
+    "title": "South Congress",
+    "description": "Vibrant street lined with eclectic shops and eateries",
+    "imageName": "soco.jpeg"
   },
   {
-    id: 7,
-    title: 'UT Tower',
-    description: 'Japanese octopus balls',
-    imageName: 'tower.jpg',
-    price: 5.99,
+    "id": 7,
+    "title": "UT Tower",
+    "description": "Iconic landmark of the University of Texas at Austin",
+    "imageName": "tower.jpg"
   },
   {
-    id: 8,
-    title: 'Under the Bridge',
-    description: 'Japanese raw fish',
-    imageName: 'under-bridge.jpg',
-    price: 8.99,
+    "id": 8,
+    "title": "Under the Bridge",
+    "description": "Famous spot under Congress Avenue Bridge known for bat watching",
+    "imageName": "under-bridge.jpg"
   },
   {
-    id: 9,
-    title: 'Barton Waterfall',
-    description: 'Japanese savory pancake',
-    imageName: 'waterfall.jpg',
-    price: 6.99,
+    "id": 9,
+    "title": "Barton Waterfall",
+    "description": "Tranquil waterfall nestled within Barton Creek Greenbelt",
+    "imageName": "waterfall.jpg"
   },
   {
-    id: 10,
-    title: 'Zilker Waterfall',
-    description: 'Japanese curry with fried pork',
-    imageName: 'zilker-waterfall.jpg',
-    price: 9.99,
+    "id": 10,
+    "title": "Zilker Waterfall",
+    "description": "Scenic waterfall located in Zilker Metropolitan Park",
+    "imageName": "zilker-waterfall.jpg"
   }
-];
+]
+
 
 
 function App() {

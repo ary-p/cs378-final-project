@@ -5,7 +5,7 @@ const Header = () => {
         <div className="menu">
             <img src="images/map.png" className="logo rounded"/>
             <div className="section text-center">
-                <p className="tagline">From-Scratch Recipes Handmade Everyday...</p>
+                <p className="tagline">City Lens</p>
             </div>
             <div className="section text-center">
                 <p className="normal-text">Most authentic in Austin!</p>
