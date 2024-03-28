@@ -4,6 +4,7 @@ import MenuItem from './MenuItem';
 import Navbar from './Navbar';
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ListComponent from './ListComponent';
 import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. 
 
 // You can use bootstrap or your own classes by using the className attribute in your elements.
@@ -111,6 +112,7 @@ function HomePage() {
         <Navbar />
         <Header />   
         <MenuItem menuItems={menuItems} />
+        
     </div>
     
   );

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './navbar.css'; // Import CSS for styling
+import { Outlet, Link } from "react-router-dom";
+
 
 const Navbar = () => {
   // State to keep track of active tab
-  const [activeTab, setActiveTab] = useState('Tab1');
+  const [activeTab, setActiveTab] = useState('Home');
 
   // Function to handle tab change
   const handleTabChange = (tab) => {
@@ -13,16 +15,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div
-        className={`tab ${activeTab === 'Tab1' ? 'active' : ''}`}
-        onClick={() => handleTabChange('Tab1')}
-      >
-        Tab 1
+        className={`tab ${activeTab === 'Home' ? 'active' : ''}`}>
+          <Link to="/">Home</Link>
       </div>
       <div
-        className={`tab ${activeTab === 'Tab2' ? 'active' : ''}`}
-        onClick={() => handleTabChange('Tab2')}
-      >
-        Tab 2
+        className={`tab ${activeTab === 'Lists' ? 'active' : ''}`}
+      ><Link to="list">Lists</Link>
       </div>
     </div>
   );
