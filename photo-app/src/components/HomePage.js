@@ -1,11 +1,10 @@
-import './App.css';
-import Header from './components/Header';
-import MenuItem from './components/MenuItem';
-import React, {useState, useEffect} from 'react';
-import Navbar from './components/Navbar';
-import ListComponent from './components/ListComponent';
-
-//import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. 
+import '../HomePage.css';
+import Header from './Header';
+import MenuItem from './MenuItem';
+import Navbar from './Navbar';
+import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. 
 
 // You can use bootstrap or your own classes by using the className attribute in your elements.
 
@@ -75,31 +74,7 @@ const menuItems = [
   }
 ]
 
-
-
-function App() {
-
-  const [lists, setLists] = useState([]);
-  const [listName, setListName] = useState('');
-
-  useEffect(() => {
-    // Load lists from localStorage when component mounts
-    const storedLists = JSON.parse(localStorage.getItem('lists')) || [];
-    setLists(storedLists);
-  }, []);
-
-  const handleAddList = (e) => {
-    e.preventDefault();
-    if (!listName.trim()) return;
-    const updatedLists = [...lists, listName];
-    setLists([...lists, listName]);
-    setListName('');
-    localStorage.setItem('lists', JSON.stringify(updatedLists));
-  };
-
-  const handleDeleteList = (name) => {
-    setLists(lists.filter(list => list !== name));
-  };
+function HomePage() {
 
   const initialCounts = menuItems.reduce((acc, menuItem) => {
     acc[menuItem.id] = 0;
@@ -130,28 +105,15 @@ function App() {
  
 
   return (
+    
     <div>
         {/* Different components used for header and menuItems. */}
         <Navbar />
         <Header />   
         <MenuItem menuItems={menuItems} />
-        <form onSubmit={handleAddList}>
-        <input
-          type="text"
-          placeholder="Enter list name"
-          value={listName}
-          onChange={(e) => setListName(e.target.value)}
-        />
-        <button type="submit">Add List</button>
-      </form>
-      <div>
-        {lists.map((name, index) => (
-          <ListComponent key={index} name={name} onDelete={handleDeleteList} />
-        ))}
-      </div>
     </div>
     
   );
 }
 
-export default App;
+export default HomePage;
