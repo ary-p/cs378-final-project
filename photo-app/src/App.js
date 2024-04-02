@@ -121,24 +121,14 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>*/
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route index element={<HomePage />}/>
+        <Route path="/" element={<HomePage />}/>
         <Route path="list" element={<List />} />
       </Routes>
     </BrowserRouter>
   );
 
-  return (
-    <div>
-        {/* Different components used for header and menuItems. */}
-        <Navbar />
-        <Header />   
-        <MenuItem menuItems={menuItems} />
-        
-    </div>
-    
-  );
 }
 
 export default App;
